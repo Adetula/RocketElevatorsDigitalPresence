@@ -97,7 +97,7 @@ jQuery(document).ready(function() {
 				+ '	</div>'
 				+ '</div>'
 
-				+ '<div id="showSwitcher" class="styleSecondColor hide hidden-xs"><i class="fa fa-flask styleColor"></i></div>'
+				// + '<div id="showSwitcher" class="styleSecondColor hide hidden-xs"><i class="fa fa-flask styleColor"></i></div>'
 				+ '<!-- /STYLESWITCHER -->';
 
 	// ADD CLASS
