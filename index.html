@@ -159,13 +159,13 @@
 									Add .external for an external link!
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li class="dropdown"><!-- HOME -->
+									<li class="dropdown" id="home-nav"><!-- HOME -->
 										<a class="active" href="#top" >
 											HOME
 										</a>
 									</li>
 									<li><!-- SERVICES -->
-										<a href="#services" class="dropdown-toggle">
+										<a href="#services" class="dropdown-toggle" id="services-nav">
 											SERVICES
 										</a><ul class="dropdown-menu">
 											<li><a href="corporate.html">CORPORATE</a></li>
@@ -175,17 +175,17 @@
 										</ul>
 									</li>
 									<li><!-- WORK -->
-										<a href="#work">
+										<a href="#portfolio" id="portfolio-nav">
 											PORTFOLIO
 										</a>
 									</li>
 									<li><!-- NEWS -->
-										<a href="#news">
+										<a href="#news" id ="news-nav">
 											NEWS
 										</a>
 									</li>
 									<li><!-- CLIENTS -->
-										<a href="#clients">
+										<a href="#clients" id="clients-nav">
 											CLIENTS
 										</a>
 									</li>
@@ -201,7 +201,7 @@
 										</a>
 									</> -->
 									<li><!-- CONTACT -->
-										<a href="#contact">
+										<a href="#contact" id="contact-nav">
 											CONTACT
 										</a>
 									</li>
@@ -498,7 +498,7 @@
 			<!-- BUTTON CALLOUT -->
 			<a class="btn btn-xlg btn-primary fs-20 fullwidth m-0 rad-0 p-40" href="#contact"/>
 				<span class="font-lato fs-30">
-					We have been in business since 1976. Have we convinced you? 
+					In business since 1976. Have we convinced you? 
 					<strong>Contact us &raquo;</strong>
 				</span>
 			</a>
@@ -512,9 +512,9 @@
 
 					<div class="row">
 						<div class="col-sm-4">
-							<a class="image-hover lightbox" href="https://vimeo.com/ondemand/buildingwithawareness/108669033" data-plugin-options='{"type":"iframe"}'>
-								<span class="image-hover-icon image-hover-dark"><!-- image-hover-light | image-hover-dark -->
-									<i class="fa fa-vimeo-square"><!-- video icon --></i>
+							<a href="#portfolio">
+								<span><!-- image-hover-light | image-hover-dark -->
+									<!-- <i class="fa fa-vimeo-square"> video icon -->
 								</span>
 								<img class="img-fluid" src="demo_files/images/thematics/construction/images (1).jpeg" alt="img" />
 							</a>
@@ -573,7 +573,7 @@
 
 
 			<!-- PORTFOLIO -->
-			<section id="work">
+			<section id="portfolio">
 				<div class="container">
 
 					<div class="heading-title heading-dotted text-center">
@@ -1324,29 +1324,29 @@
 											</div>
 											<div class="col-md-4">
 												<label for="contact:business-name">Business Name *</label>
-												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+												<input required type="text" value="" class="form-control" name="contact[name][required]" id="name">
 											</div>
 											<div class="col-md-4">
 												<label for="contact:email">E-mail Address *</label>
-												<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
+												<input required type="email" value="" class="form-control" name="contact[email][required]" id="email">
 											</div>
 											<div class="col-md-4">
 												<label for="contact:phone">Phone</label>
-												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
+												<input type="text" value="" class="form-control" name="contact[phone]" id="phone">
 											</div>
 											<div class="col-md-4">
 												<label for="contact:project-name">Project Name *</label>
-												<input required type="text" value="" class="form-control" name="project-contact[name][required]" id="contact:project-name">
+												<input required type="text" value="" class="form-control" name="project-contact[name][required]" id="project-name">
 											</div>
 									</div>
 									<div class="row">
 											<div class="col-md-8">
 												<label for="contact:subject">Project Description *</label>
-												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:project-description">
+												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="project-description">
 											</div>
 											<div class="col-md-4">
 												<label for="contact_department">Department</label>
-												<select class="form-control pointer" name="contact[department]">
+												<select class="form-control pointer" name="contact[department]" id="department">
 													<option value="">--- Select ---</option>
 													<option value="Marketing">Marketing</option>
 													<option value="Webdesign">Sales</option>
@@ -1357,12 +1357,12 @@
 									<div class="row">
 											<div class="col-md-12">
 												<label for="contact:message">Message *</label>
-												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
+												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="message"></textarea>
 											</div>
 									</div>
 									<div class="row">
 											<div class="col-md-12">
-												<label for="contact:attachment">File Attachment</label>
+												<label for="attachment">File Attachment</label>
 
 												<!-- custom file upload -->
 												<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
@@ -1409,8 +1409,10 @@
 
 							<p>
 								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 418-725 Boulevard Lebourgneuf, Québec, QC G2J 0C4</span>
-								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-555-1234</a></span>
-								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">mail@rocketelevators.com</a></span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:418-555-1234">(418)-555-1234</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="info@codeboxx.biz
+									">info@codeboxx.biz
+								</a></span>
 							</p>
 
 						</div>
@@ -1439,9 +1441,9 @@
 
 							<!-- Small Description -->
 							<p>
-								We are the bigggest, most reliable and stock the most sophisticated Elevators in North America
+								We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.
 							</p>
-							<h2>(800) 123-4567</h2>
+							<h2>(418) 123-4567</h2>
 						</div>
 						<!-- /col #1 -->
 
