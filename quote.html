@@ -485,294 +485,128 @@
              
     </form>
 
-    <!-- FOOTER -->
-			<footer id="footer">
-				<div class="container">
+   <!-- FOOTER -->
+   <footer id="footer">
+    <div class="container">
 
 
-					<div class="row">
+      <div class="row">
 
-							<!-- <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<input id="nre" type="text" readonly placeholder="Number Of Required Elevators">
-                                <input id="cpl" readonly type="text" placeholder="Cost Per Elevator">
-                                <input id="tce" readonly type="text" placeholder="Total Cost Of Elevator">
-                                <input id="tci" readonly type="text" placeholder="Total Cost Of Installation">
-                                <input id="st" readonly type="text" placeholder="SUM TOTAL">
-                            <!- <div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span> -->
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
-									</span>
-								</div> -->
-							</form>
-							<!-- /Newsletter Form -->
+        <!-- col #1 -->
+        <div class="col-md-8">
 
+          <h3 class="letter-spacing-1">WHY US?</h3>
 
-						</div>
-						<!-- /col #2 -->
+          <!-- Small Description -->
+          <p>
+            We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.
+          </p>
+          <h2>(418) 123-4567</h2>
+        </div>
+        <!-- /col #1 -->
 
-					</div>
+        <!-- col #2 -->
+        <div class="col-md-4">
+          <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
 
+          <!-- Newsletter Form -->
+          <p>Subscribe to Our Newsletter to get Important News & Offers</p>
 
-				</div>
-
-				<div class="copyright">
-					<div class="container">
-						<ul class="float-right m-0 list-inline mobile-block">
-							<li><a href="#">Terms &amp; Conditions</a></li>
-							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
-						</ul>
-						&copy; All Rights Reserved, Rocket Elevators LTD
-					</div>
-				</div>
-
-			</footer>
-			<!-- /FOOTER -->
-
-		</div>
-		<!-- /wrapper -->
+          <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+              <span class="input-group-btn">
+                <button class="btn btn-success" type="submit">Subscribe</button>
+              </span>
+            </div>
+          </form>
+          <!-- /Newsletter Form -->
 
 
-		<!-- SCROLL TO TOP -->
-		<a href="#" id="toTop"></a>
+        </div>
+        <!-- /col #2 -->
+
+      </div>
 
 
-		<!-- PRELOADER -->
-		<div id="preloader">
-			<div class="inner">
-				<span class="loader"></span>
-			</div>
-		</div><!-- /PRELOADER -->
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <ul class="float-right m-0 list-inline mobile-block">
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li>&bull;</li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+        &copy; All Rights Reserved, Rocket Elevators LTD
+      </div>
+    </div>
+
+  </footer>
+  <!-- /FOOTER -->
+
+</div>
+<!-- /wrapper -->
 
 
-		<!-- JAVASCRIPT FILES -->
-		<script>var plugin_path = 'assets/plugins/';</script>
-		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+<!-- SCROLL TO TOP -->
+<a href="#" id="toTop"></a>
 
-		<script src="assets/js/scripts.js"></script>
-		
-		<!-- STYLESWITCHER - REMOVE -->
-		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
 
-		<!-- REVOLUTION SLIDER -->
-		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
-		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
-		<script src="assets/js/view/demo.revolution_slider.js"></script>
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="inner">
+    <span class="loader"></span>
+  </div>
+</div><!-- /PRELOADER -->
 
-		<!-- PAGELEVEL SCRIPTS -->
-		<script src="assets/js/contact.js"></script>
 
-		<!-- 
-			GMAP.JS 
-			http://hpneo.github.io/gmaps/
-		-->
-		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
-		<script src="assets/plugins/gmaps.js"></script>
-		<script>
-            const select = document.getElementById('building-type');
-            select.addEventListener('change', buildingType);
-            
-            function buildingType() {
-                const choice = select.value;
-                console.log(choice)
-                document.getElementById("residential-container").style.display="none";
+<!-- JAVASCRIPT FILES -->
+<script>var plugin_path = 'assets/plugins/';</script>
+<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
 
-                document.getElementById("commercial-container").style.display="none";
-                document.getElementById("corporate-container").style.display="none";
+<script src="assets/js/scripts.js"></script>
 
-                document.getElementById("hybrid-container").style.display="none";
-                
-                document.getElementById("type").style.display="block";
-              
-                if (choice === 'residential'){
-                    document.getElementById("residential-container").style.display="block";
-                }else if (choice === 'commercial'){
-                    document.getElementById("commercial-container").style.display="block";
-                }else if (choice === 'corporate'){
-                    document.getElementById("corporate-container").style.display="block";
-                }else if (choice === 'hybrid'){
-                    document.getElementById("hybrid-container").style.display="block";
-                }
-            }
-        </script>              
-        <script>
-          function numberWithCommas(x) {
-                x = x.toFixed(2)
-                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            }
-            // alert(numberWithCommas(7565.78) )
-            function output(ec, cost, fee){
-                elevatorCost = ec * cost 
-                installCost = ec * fee
-                totalCost = elevatorCost + installCost
-            
-                document.getElementById("nre").value="Required="+ec+" elevators"
-                document.getElementById("cpl").value="Cost Per Unit=$"+numberWithCommas(cost)
-                document.getElementById("tce").value="Total Elevator Cost=$"+numberWithCommas(elevatorCost)
-                document.getElementById("tci").value="Installation Cost=$"+numberWithCommas(installCost)
-                document.getElementById("st").value="Sum Total=$"+numberWithCommas(totalCost)
-            }
-            
-            
-            function residential(cost, fee){
-                ap = parseInt(document.getElementById("ap1").value);
-                fl = parseInt(document.getElementById("fl1").value);
-                ba = parseInt(document.getElementById("ba1").value);
+<!-- STYLESWITCHER - REMOVE -->
+<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
 
-                total = Math.ceil(ap * ba/(fl*6))
-                column = Math.ceil(fl/20)
-                console.log(total+" "+column)
-               
-                output(total, cost, fee)
-               
-              }
+<!-- REVOLUTION SLIDER -->
+<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="assets/js/view/demo.revolution_slider.js"></script>
 
-			function commercial(cost, fee){
-                bus = document.getElementById("bu2").value;
-                fl = document.getElementById("fl2").value;
-                ba = document.getElementById("ba2").value;
-                ps = document.getElementById("ps2").value;
-                ec = document.getElementById("ec2").value;
-                if(!ec){alert("Fill required field"); return;}
-                ec = parseFloat(ec)
-                // || !ps || !ba || !fl || !bus
-                output(ec, cost, fee)
-			
-                //alert("Number of required Elevator = "+ ec +"<br>Cost per Elevator = "+ cost +"<br>Total Cost of Elevator = "+ elevatorCost+ "<br> Total cost of Installation = "+ installCost+ "<brTOTAL COST = "+ totalCost)
-			}
+<!-- PAGELEVEL SCRIPTS -->
+<script src="assets/js/contact.js"></script>
 
-			function corporate(cost, fee){//this should be last. check fields id 
-                st = parseInt(document.getElementById("st3").value);
-                fl = parseInt(document.getElementById("fl3").value);
-                ba = parseInt(document.getElementById("ba3").value);
-                ps = parseInt(document.getElementById("ps3").value);
-      
-               if(!fl || !ba || !st){return;}      
-               
-                elre = Math.ceil((st * (fl + ba)) / 1000)
-                console.log(elre+" "+ st+" "+ fl+ " "+ ba)
-                column = Math.ceil((fl + ba)/20) 
-                el_per_col = Math.ceil(elre/column)
-                total = el_per_col * column
-                output(total, cost, fee)
-      
-			}
+<!-- 
+  GMAP.JS 
+  http://hpneo.github.io/gmaps/
+-->
+<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
+<script src="assets/plugins/gmaps.js"></script>
+<!-- <script>
 
-			function hybrid(cost, fee){//check fields and do examples
-                bus = document.getElementById("bu4").value;
-                fl = parseInt(document.getElementById("fl4").value);
-                ps = document.getElementById("ps4").value;
-                ba = parseInt(document.getElementById("ba4").value);
-                oc = parseInt(document.getElementById("oc4").value);
-                hr = document.getElementById("hr4").value;
-          
-                if(!fl || !ba || !oc){ return;}      
-                
-                elre = Math.ceil((oc * (fl + ba))/1000)
-                console.log(elre+" "+ oc+" "+ fl+ " "+ ba)
-                column = Math.ceil((fl + ba)/20) 
-                el_per_col = Math.ceil(elre/column)
-                total = el_per_col * column
-                output(total, cost, fee)
-              
-			
-              }
+  jQuery(document).ready(function(){
 
-			
-              document.getElementById('standard').addEventListener('click', submit);  
-              document.getElementById('premium').addEventListener('click', submit);  
-              document.getElementById('excellum').addEventListener('click', submit);  
-                
-            
-            document.getElementById('ap1').addEventListener('change', submit);
-            document.getElementById('fl1').addEventListener('change', submit);
-            document.getElementById('ba1').addEventListener('change', submit);
-            
-			      document.getElementById('ec2').addEventListener('change', submit);
-            
-			      document.getElementById('st3').addEventListener('change', submit);
-            document.getElementById('fl3').addEventListener('change', submit);
-            document.getElementById('ba3').addEventListener('change', submit);
-            
-			      document.getElementById('oc4').addEventListener('change', submit);
-            document.getElementById('fl4').addEventListener('change', submit);
-            document.getElementById('ba4').addEventListener('change', submit);
-            
-            
-			
+    /**
+      @BASIC GOOGLE MAP
+    **/
+    var map2 = new GMaps({
+      div: '#map2',
+      lat: -12.043333,
+      lng: -77.028333,
+      scrollwheel: false
+    });
 
-			function submit(){            
-            document.getElementById("nre").value=""
-            document.getElementById("cpl").value=""
-            document.getElementById("tce").value=""
-            document.getElementById("tci").value=""
-            document.getElementById("st").value=""
-            const choice = select.value;
-            
-            var rates = document.getElementsByName('type');
-            let typeValue;
-            for(var i = 0; i < rates.length; i++){
-                if(rates[i].checked){
-                  typeValue = rates[i].value;
-                }
-            }
-			    if(!choice || !typeValue){return;}
-                            
-			          let cost = 7565
-                let fee = 756.5
-			
-                if(typeValue.indexOf("premium") > -1){
-                     cost = 12345
-                     fee = 949.62
-                }else if(typeValue.indexOf("excellum") > -1){
-                     cost = 15400
-                     fee = 962.5
-                }
-                
-			
-                console.log(typeValue+ cost)
-			
-                if (choice === 'residential'){
-                  residential(cost, fee)
-                }else if (choice === 'commercial'){
-                    commercial(cost, fee);
-                }else if (choice === 'corporate'){
-                  corporate(cost, fee)
-                }else if (choice === 'hybrid'){
-                  hybrid(cost, fee)
-                }
+    var marker = map2.addMarker({
+      lat: -12.043333,
+      lng: -77.028333,
+      title: 'Company, Inc.'
+    });
 
-			}
-        </script>
-			
+  });
 
-			
-
-			
-    <!-- <script>
-
-			jQuery(document).ready(function(){
-
-				/**
-					@BASIC GOOGLE MAP
-				**/
-				var map2 = new GMaps({
-					div: '#map2',
-					lat: -12.043333,
-					lng: -77.028333,
-					scrollwheel: false
-				});
-
-				var marker = map2.addMarker({
-					lat: -12.043333,
-					lng: -77.028333,
-					title: 'Company, Inc.'
-				});
-
-			});
-
-		</script> -->
-	</body>
+</script> -->
+</body>
 </html>
